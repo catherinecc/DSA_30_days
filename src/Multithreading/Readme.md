@@ -23,3 +23,13 @@
 *    - This is shared across **all instances**
 *    - Does *not* interfere with instance-level locks (`this`)
        */
+
+
+Synchronized data structures
+BlockingQueue
+
+Use ConcurrentHashMap for maps, CopyOnWriteArrayList for read-heavy lists, and BlockingQueue for producer–consumer setups.
+Avoid legacy classes like Vector and Hashtable unless absolutely needed for compatibility.
+
+Exceptions
+Exception in thread "Thread-1" java.lang.IllegalMonitorStateException: current thread is not  - when wait is called on non-synchronized method
