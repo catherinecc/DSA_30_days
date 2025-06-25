@@ -35,7 +35,7 @@ for inter-thread communication
 Since both methods operate on the object's monitor (lock), they **must be called from within a synchronized context** (i.e., the thread must hold the lock on that object).
 If you call wait() or notify() outside a synchronized block or method, the JVM will throw an **IllegalMonitorStateException**, because the thread is trying to interact with a monitor it doesn’t hold.
 
-**Synchronized data structures**
+##**Synchronized data structures**
 BlockingQueue
 
 ConcurrentHashMap for maps,
