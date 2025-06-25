@@ -24,16 +24,16 @@
 *    - Does *not* interfere with instance-level locks (`this`)
        */
 
-**Wait and notify**
+## **Wait and notify**
 wait() and notify() are instance methods defined in the Object class.
 for inter-thread communication
 
-wait() causes the current thread to release the object's intrinsic lock and go into the waiting state until it is notified.
+**wait()** causes the current thread to **release** the object's intrinsic lock and go into the waiting state until it is notified.
 
-notify() wakes one thread waiting on the same object's monitor so it can attempt to reacquire the lock and proceed.
+**notify()** wakes one thread waiting on the same object's monitor so it can attempt to **reacquire the lock** and proceed.
 
-Since both methods operate on the object's monitor (lock), they must be called from within a synchronized context (i.e., the thread must hold the lock on that object).
-If you call wait() or notify() outside a synchronized block or method, the JVM will throw an IllegalMonitorStateException, because the thread is trying to interact with a monitor it doesn’t hold.
+Since both methods operate on the object's monitor (lock), they **must be called from within a synchronized context** (i.e., the thread must hold the lock on that object).
+If you call wait() or notify() outside a synchronized block or method, the JVM will throw an **IllegalMonitorStateException**, because the thread is trying to interact with a monitor it doesn’t hold.
 
 **Synchronized data structures**
 BlockingQueue
