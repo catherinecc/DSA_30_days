@@ -20,3 +20,16 @@ Steps to solve any recursion problem:
 5. In the recursion tree,
    6. Draw the recursion tree on pen and paper
    7. Check the debugger to see how execution happens
+
+Variables in Recursion:
+1. Function Arguments: The inputs to the recursive function.
+2. Body
+3. return value: The value returned by the recursive function.
+
+Types of Recursion:
+1. **Direct Recursion**: A function calls itself directly.
+   - Example: `factorial(n) = n * factorial(n-1)`
+2. Linear Recursion: A function calls itself once in each invocation.
+   - Example: `fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)`
+3. Divide and Conquer: A function divides the problem into smaller subproblems, solves them independently, and combines the results.
+   - Example: Merge Sort
