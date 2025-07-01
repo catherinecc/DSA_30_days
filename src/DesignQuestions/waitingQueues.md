@@ -65,4 +65,10 @@ public interface WaitingQueues {
             }
         }
     }
+
+
+## Ways to create an immutable list in Java:
+Collectios.unmodifiableList(List<T> list) - Returns an unmodifiable view of the specified list.
+List.of(T... elements) - Creates an immutable list containing the specified elements.
+List.copyOf(Collection<? extends T> coll) - Creates an immutable list containing the elements of the specified collection.
 }
